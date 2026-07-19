@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const activitySelect = document.getElementById("activity");
   const emailInput = document.getElementById("email");
   const defaultActivityOption = '<option value="">-- Select an activity --</option>';
+  const activitySelectionPlaceholder = defaultActivityOption;
   const signupForm = document.getElementById("signup-form");
   const messageDiv = document.getElementById("message");
 
@@ -24,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // Clear loading message
       activitiesList.innerHTML = "";
-      activitySelect.innerHTML = defaultActivityOption;
+      activitySelect.innerHTML = activitySelectionPlaceholder;
 
       // Populate activities list
       Object.entries(activities).forEach(([name, details]) => {
