@@ -119,6 +119,7 @@ section h3 {
 
 .participant-email {
   overflow-wrap: anywhere;
+  line-height: 1.4;
 }
 
 .participant-delete {
