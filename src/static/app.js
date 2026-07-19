@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const activitiesList = document.getElementById("activities-list");
   const activitySelect = document.getElementById("activity");
+  const emailInput = document.getElementById("email");
   const signupForm = document.getElementById("signup-form");
   const messageDiv = document.getElementById("message");
 
@@ -88,7 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
   signupForm.addEventListener("submit", async (event) => {
     event.preventDefault();
 
-    const email = document.getElementById("email").value;
+    const email = emailInput.value.trim();
     const activity = document.getElementById("activity").value;
 
     try {
